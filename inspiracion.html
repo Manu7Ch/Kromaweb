@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galería de inspiración para tu marca — Kroma, Piura." />
+  <title>Inspiración — Kroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <style>
+    .style-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--sp-6);
+    }
+
+    .style-item {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+      background-color: var(--clr-sand);
+      cursor: pointer;
+    }
+
+    .style-item__img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--transition-slow);
+    }
+
+    .style-item:hover .style-item__img {
+      transform: scale(1.04);
+    }
+
+    .style-item__label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--sp-5);
+      background: linear-gradient(to top, rgba(20,20,20,0.75) 0%, transparent 100%);
+      font-size: var(--size-sm);
+      font-weight: var(--weight-semibold);
+      color: var(--clr-white);
+      letter-spacing: 0.04em;
+    }
+
+    .style-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .style-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .style-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Kroma — inicio">
+        <span class="navbar__logo-text">Kr<span>&#9679;</span>ma</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="index.html"       class="navbar__link">Inicio</a>
+        <a href="servicios.html"   class="navbar__link">Servicios</a>
+        <a href="portafolio.html"  class="navbar__link">Portafolio</a>
+        <a href="inspiracion.html" class="navbar__link active">Inspiración</a>
+        <a href="contacto.html"    class="navbar__cta">Cotizar</a>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="navbar__mobile-menu" aria-label="Menú móvil">
+    <a href="index.html"       class="navbar__mobile-link">Inicio</a>
+    <a href="servicios.html"   class="navbar__mobile-link">Servicios</a>
+    <a href="portafolio.html"  class="navbar__mobile-link">Portafolio</a>
+    <a href="inspiracion.html" class="navbar__mobile-link active">Inspiración</a>
+    <a href="contacto.html"    class="navbar__mobile-cta">Cotizar ahora</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero page-offset">
+      <div class="container">
+        <p class="page-hero__eyebrow">Descubre tu estilo</p>
+        <h1 class="page-hero__title">Inspírate aquí</h1>
+        <p class="page-hero__subtitle">Explora diferentes estilos y estéticas. Cuéntanos cuál se acerca a la visión de tu marca.</p>
+      </div>
+    </div>
+
+
+    <!-- ESTILOS -->
+    <section class="section" aria-labelledby="estilos-title">
+      <div class="container">
+
+        <div style="margin-bottom: var(--sp-16); text-align: center;">
+          <span class="section-eyebrow reveal">Estilos de marca</span>
+          <h2 class="section-title reveal reveal-delay-1" id="estilos-title">Escoge tu estilo</h2>
+          <p class="section-subtitle reveal reveal-delay-2" style="margin-inline:auto;">
+            Cada marca tiene una personalidad única. Aquí algunos estilos que trabajamos —
+            aunque siempre podemos combinarlos o ir más allá.
+          </p>
+        </div>
+
+        <!-- Style categories -->
+        <div style="margin-bottom: var(--sp-16);">
+          <div style="display:flex; align-items:center; gap: var(--sp-4); margin-bottom: var(--sp-8);">
+            <div class="divider" style="flex-shrink:0; margin:0;"></div>
+            <h3 class="reveal" style="font-size: var(--size-lg); white-space:nowrap;">Estilo Moderno & Minimalista</h3>
+          </div>
+          <div class="style-grid">
+            <div class="style-item reveal">
+              <!-- Replace with img tag when you have images: <img class="style-item__img" src="img/inspo-modern-1.jpg" alt="Estilo moderno 1" /> -->
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#f0ede4,#ddd8cc);">
+                Imagen de inspiración
+              </div>
+              <div class="style-item__label">Minimalista limpio</div>
+            </div>
+            <div class="style-item reveal reveal-delay-1">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#e8e4f0,#cec6e0);">
+                Imagen de inspiración
+              </div>
+              <div class="style-item__label">Tipográfico</div>
+            </div>
+            <div class="style-item reveal reveal-delay-2">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#e4ede8,#c8dcd0);">
+                Imagen de inspiración
+              </div>
+              <div class="style-item__label">Geométrico</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: var(--sp-16);">
+          <div style="display:flex; align-items:center; gap: var(--sp-4); margin-bottom: var(--sp-8);">
+            <div class="divider" style="flex-shrink:0; margin:0;"></div>
+            <h3 class="reveal" style="font-size: var(--size-lg); white-space:nowrap;">Estilo Retro & Artesanal</h3>
+          </div>
+          <div class="style-grid">
+            <div class="style-item reveal">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#f5e8d4,#e8cfaa);">
+                Imagen de inspiración
+              </div>
+              <div class="style-item__label">Vintage americano</div>
+            </div>
+            <div class="style-item reveal reveal-delay-1">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#ede4d8,#d8c8b4);">
+                Imagen de inspiración
+              </div>
+              <div class="style-item__label">Artesanal handmade</div>
+            </div>
+            <div class="style-item reveal reveal-delay-2">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#f0eae0,#ddd3c4);">
+                Imagen de inspiración
+              </div>
+              <div class="style-item__label">Ilustrado orgánico</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: var(--sp-8);">
+          <div style="display:flex; align-items:center; gap: var(--sp-4); margin-bottom: var(--sp-8);">
+            <div class="divider" style="flex-shrink:0; margin:0;"></div>
+            <h3 class="reveal" style="font-size: var(--size-lg); white-space:nowrap;">Estilo Elegante & Premium</h3>
+          </div>
+          <div class="style-grid">
+            <div class="style-item reveal">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#1a1a1a,#2e2e2e);">
+                <span style="color:rgba(255,255,255,0.15);">Imagen de inspiración</span>
+              </div>
+              <div class="style-item__label">Lujo oscuro</div>
+            </div>
+            <div class="style-item reveal reveal-delay-1">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#f8f6f2,#eeeae4);">
+                Imagen de inspiración
+              </div>
+              <div class="style-item__label">Premium blanco</div>
+            </div>
+            <div class="style-item reveal reveal-delay-2">
+              <div class="style-placeholder"
+                   style="background:linear-gradient(135deg,#1e3a14,#3d6b2c);">
+                <span style="color:rgba(255,255,255,0.15);">Imagen de inspiración</span>
+              </div>
+              <div class="style-item__label">Natural sofisticado</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-muted text-small text-center reveal"
+           style="margin-top: var(--sp-8);">
+          Agrega tus imágenes de inspiración en <code>img/</code> y actualiza los
+          <code>src</code> para mostrar referencias reales.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="section section--dark" aria-label="CTA inspiración">
+      <div class="container text-center">
+        <h2 class="section-title reveal" style="color: var(--clr-white); margin-inline:auto; max-width: 580px;">
+          ¿Ya tienes un estilo en mente?
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-1"
+           style="margin-inline:auto; color:rgba(255,255,255,0.65); margin-bottom: var(--sp-8);">
+          Cuéntanos tu visión y la hacemos realidad.
+        </p>
+        <a href="contacto.html" class="btn btn--primary btn--lg reveal reveal-delay-2">
+          Empezar cotización
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Kr<span>&#9679;</span>ma</div>
+          <p class="footer__tagline">De idea a identidad</p>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📍</span>Piura, Perú</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span>961 171 186</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">✉</span>Kroma062026@gmail.com</div>
+        </div>
+        <div>
+          <p class="footer__col-title">Navegación</p>
+          <a href="index.html"       class="footer__link">Inicio</a>
+          <a href="servicios.html"   class="footer__link">Servicios / Paquetes</a>
+          <a href="portafolio.html"  class="footer__link">Portafolio</a>
+          <a href="inspiracion.html" class="footer__link">Inspiración</a>
+          <a href="contacto.html"    class="footer__link">Contacto</a>
+        </div>
+        <div>
+          <p class="footer__col-title">Paquetes</p>
+          <a href="servicios.html#basico"   class="footer__link">Básico</a>
+          <a href="servicios.html#estandar" class="footer__link">Estándar</a>
+          <a href="servicios.html#premium"  class="footer__link">Premium</a>
+          <a href="contacto.html"           class="footer__link">Cotización personalizada</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Kroma. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

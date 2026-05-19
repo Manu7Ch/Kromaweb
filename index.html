@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kroma — Estudio de identidad visual en Piura, Perú. De idea a identidad." />
+  <title>Kroma — De idea a identidad</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+
+      <a href="index.html" class="navbar__logo" aria-label="Kroma — inicio">
+        <span class="navbar__logo-text">Kr<span>&#9679;</span>ma</span>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="index.html"       class="navbar__link active">Inicio</a>
+        <a href="servicios.html"   class="navbar__link">Servicios</a>
+        <a href="portafolio.html"  class="navbar__link">Portafolio</a>
+        <a href="inspiracion.html" class="navbar__link">Inspiración</a>
+        <a href="contacto.html"    class="navbar__cta">Cotizar</a>
+      </nav>
+
+      <button class="navbar__hamburger"
+              aria-label="Abrir menú"
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="navbar__mobile-menu" aria-label="Menú móvil">
+    <a href="index.html"       class="navbar__mobile-link active">Inicio</a>
+    <a href="servicios.html"   class="navbar__mobile-link">Servicios</a>
+    <a href="portafolio.html"  class="navbar__mobile-link">Portafolio</a>
+    <a href="inspiracion.html" class="navbar__mobile-link">Inspiración</a>
+    <a href="contacto.html"    class="navbar__mobile-cta">Cotizar ahora</a>
+  </nav>
+
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <!-- Replace src with your actual hero image -->
+        <img class="hero__bg-img"
+             src="img/hero-bg.jpg"
+             alt=""
+             aria-hidden="true" />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <span class="hero__eyebrow">Estudio de identidad visual · Piura, Perú</span>
+
+        <h1 class="hero__title" id="hero-title">
+          De idea<br />a <em>identidad</em>
+        </h1>
+
+        <p class="hero__subtitle">
+          Creamos marcas con carácter. Estrategia, diseño y sistema visual
+          que conectan tu negocio con las personas correctas.
+        </p>
+
+        <div class="hero__actions">
+          <a href="servicios.html" class="btn btn--primary btn--lg">Ver paquetes</a>
+          <a href="portafolio.html" class="btn btn--lg"
+             style="color:var(--clr-white); border: 1.5px solid rgba(255,255,255,0.4);">
+            Ver portafolio
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="14" height="22" rx="7"
+                stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="8" cy="8" r="2" fill="currentColor">
+            <animate attributeName="cy" values="8;14;8" dur="2s"
+                     repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         STATS
+    ════════════════════════════════════════════════════════ -->
+    <section class="section section--alt" aria-label="Cifras">
+      <div class="container">
+        <div class="grid grid-4" style="text-align:center;">
+          <div class="stat-item reveal">
+            <div class="stat-item__number">50+</div>
+            <div class="stat-item__label">Marcas creadas</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-item__number">3+</div>
+            <div class="stat-item__label">Años de experiencia</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-item__number">100%</div>
+            <div class="stat-item__label">Diseño personalizado</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-item__number">∞</div>
+            <div class="stat-item__label">Ideas posibles</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SERVICES OVERVIEW
+    ════════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--sp-16);">
+          <span class="section-eyebrow reveal">Lo que hacemos</span>
+          <h2 class="section-title reveal reveal-delay-1" id="services-title">
+            Identidad visual completa
+          </h2>
+          <p class="section-subtitle reveal reveal-delay-2" style="margin-inline: auto;">
+            Cada marca es única. Trabajamos contigo desde la estrategia hasta
+            el último detalle visual.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">✦</div>
+            <h3 class="service-card__title">Estrategia de marca</h3>
+            <p class="service-card__text">
+              Definimos la personalidad, valores y posicionamiento que guiarán
+              toda tu identidad visual.
+            </p>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon" aria-hidden="true">◎</div>
+            <h3 class="service-card__title">Sistema de logos</h3>
+            <p class="service-card__text">
+              Diseñamos versiones principal, secundaria y variaciones para cada
+              contexto y aplicación.
+            </p>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon" aria-hidden="true">▦</div>
+            <h3 class="service-card__title">Manual de marca</h3>
+            <p class="service-card__text">
+              Documentamos las reglas de uso para que tu marca sea coherente
+              en cada punto de contacto.
+            </p>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Redes sociales</h3>
+            <p class="service-card__text">
+              Plantillas y sistema visual adaptado para Instagram, Facebook
+              y demás plataformas digitales.
+            </p>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon" aria-hidden="true">⬡</div>
+            <h3 class="service-card__title">Packaging y etiquetas</h3>
+            <p class="service-card__text">
+              Diseño de empaques, etiquetas y materiales físicos que reflejan
+              la identidad de tu marca.
+            </p>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-card__icon" aria-hidden="true">❐</div>
+            <h3 class="service-card__title">Papelería y fachadas</h3>
+            <p class="service-card__text">
+              Tarjetas, menús, letreros y todo lo que tu negocio necesita para
+              brillar en el mundo físico.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: var(--sp-12);">
+          <a href="servicios.html" class="btn btn--outline btn--lg reveal">
+            Ver todos los paquetes
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         PROCESS
+    ════════════════════════════════════════════════════════ -->
+    <section class="section section--alt" aria-labelledby="process-title">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--sp-20); align-items: center;">
+
+          <div>
+            <span class="section-eyebrow reveal">Cómo trabajamos</span>
+            <h2 class="section-title reveal reveal-delay-1" id="process-title">
+              Un proceso claro,<br />resultados precisos
+            </h2>
+            <p class="section-subtitle reveal reveal-delay-2">
+              De la primera llamada hasta los archivos finales, te acompañamos
+              en cada etapa con orden y criterio.
+            </p>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap: var(--sp-10);">
+            <div class="process-step reveal">
+              <div class="process-step__number">01</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Discover</h3>
+                <p class="process-step__text">
+                  Conocemos tu negocio, público objetivo y competencia para
+                  definir la dirección estratégica.
+                </p>
+              </div>
+            </div>
+            <div class="process-step reveal reveal-delay-1">
+              <div class="process-step__number">02</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Define</h3>
+                <p class="process-step__text">
+                  Creamos el brief visual y alineamos expectativas antes de
+                  diseñar una sola línea.
+                </p>
+              </div>
+            </div>
+            <div class="process-step reveal reveal-delay-2">
+              <div class="process-step__number">03</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Design</h3>
+                <p class="process-step__text">
+                  Desarrollamos propuestas de diseño y refinamos hasta
+                  lograr la identidad perfecta.
+                </p>
+              </div>
+            </div>
+            <div class="process-step reveal reveal-delay-3">
+              <div class="process-step__number">04</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Deliver</h3>
+                <p class="process-step__text">
+                  Entregamos todos los archivos organizados y listos para
+                  usar en cualquier formato.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         CTA BANNER
+    ════════════════════════════════════════════════════════ -->
+    <section class="section section--dark" aria-labelledby="cta-title">
+      <div class="container text-center">
+        <span class="section-eyebrow reveal" style="color: var(--clr-green-300);">
+          ¿Lista tu marca?
+        </span>
+        <h2 class="section-title reveal reveal-delay-1" id="cta-title"
+            style="color: var(--clr-white); margin-inline: auto; max-width: 640px;">
+          Comienza con una cotización gratuita
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2"
+           style="margin-inline: auto; color: rgba(255,255,255,0.65);">
+          Cuéntanos tu proyecto y te respondemos en 24 horas.
+        </p>
+        <div class="divider divider--center reveal reveal-delay-2"
+             style="margin-block: var(--sp-6);"></div>
+        <a href="contacto.html"
+           class="btn btn--primary btn--lg reveal reveal-delay-3">
+          Escribirnos ahora
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__brand-name">Kr<span>&#9679;</span>ma</div>
+          <p class="footer__tagline">De idea a identidad</p>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+            Piura, Perú
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📞</span>
+            961 171 186
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">✉</span>
+            Kroma062026@gmail.com
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">🕐</span>
+            Lun–Vie 8:00–17:00 · Sáb 9:00–12:00
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navegación</p>
+          <a href="index.html"       class="footer__link">Inicio</a>
+          <a href="servicios.html"   class="footer__link">Servicios / Paquetes</a>
+          <a href="portafolio.html"  class="footer__link">Portafolio</a>
+          <a href="inspiracion.html" class="footer__link">Inspiración</a>
+          <a href="contacto.html"    class="footer__link">Contacto</a>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Paquetes</p>
+          <a href="servicios.html#basico"   class="footer__link">Básico</a>
+          <a href="servicios.html#estandar" class="footer__link">Estándar</a>
+          <a href="servicios.html#premium"  class="footer__link">Premium</a>
+          <a href="contacto.html"           class="footer__link">Cotización personalizada</a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Kroma. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

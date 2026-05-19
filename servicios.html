@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paquetes y servicios de diseño de identidad visual — Kroma, Piura." />
+  <title>Servicios y Paquetes — Kroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Kroma — inicio">
+        <span class="navbar__logo-text">Kr<span>&#9679;</span>ma</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="index.html"       class="navbar__link">Inicio</a>
+        <a href="servicios.html"   class="navbar__link active">Servicios</a>
+        <a href="portafolio.html"  class="navbar__link">Portafolio</a>
+        <a href="inspiracion.html" class="navbar__link">Inspiración</a>
+        <a href="contacto.html"    class="navbar__cta">Cotizar</a>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="navbar__mobile-menu" aria-label="Menú móvil">
+    <a href="index.html"       class="navbar__mobile-link">Inicio</a>
+    <a href="servicios.html"   class="navbar__mobile-link active">Servicios</a>
+    <a href="portafolio.html"  class="navbar__mobile-link">Portafolio</a>
+    <a href="inspiracion.html" class="navbar__mobile-link">Inspiración</a>
+    <a href="contacto.html"    class="navbar__mobile-cta">Cotizar ahora</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero page-offset">
+      <div class="container">
+        <p class="page-hero__eyebrow">Haz tu pedido</p>
+        <h1 class="page-hero__title">Servicios & Paquetes</h1>
+        <p class="page-hero__subtitle">Echa un vistazo a nuestros paquetes y elige el que mejor se adapta a tu negocio.</p>
+      </div>
+    </div>
+
+
+    <!-- PACKAGES -->
+    <section class="section" aria-labelledby="packages-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="packages-title">Nuestros paquetes</h2>
+
+        <div class="grid grid-3" style="align-items: start;">
+
+          <!-- BÁSICO -->
+          <div class="package-card reveal" id="basico">
+            <div class="package-card__badge">Básico</div>
+            <div class="package-card__name">Esencial</div>
+            <div class="package-card__price">S/.350 <span>/ único</span></div>
+            <div class="package-card__divider"></div>
+            <ul class="package-card__features">
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Diseño de logotipo (2 propuestas)
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Paleta de colores y tipografías
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                3 variaciones de logo
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Archivos editables (AI, PDF, PNG)
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                2 rondas de revisión
+              </li>
+            </ul>
+            <a href="contacto.html" class="btn btn--outline" style="width:100%; justify-content:center;">
+              Solicitar paquete
+            </a>
+          </div>
+
+          <!-- ESTÁNDAR -->
+          <div class="package-card package-card--featured reveal reveal-delay-1" id="estandar">
+            <div class="package-card__badge">Más popular</div>
+            <div class="package-card__name">Estándar</div>
+            <div class="package-card__price">S/.650 <span>/ único</span></div>
+            <div class="package-card__divider"></div>
+            <ul class="package-card__features">
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Todo lo del paquete Básico
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Manual de marca (versión digital)
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Diseño para redes sociales (6 plantillas)
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Tarjeta de presentación
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Mockups básicos
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                3 rondas de revisión
+              </li>
+            </ul>
+            <a href="contacto.html" class="btn btn--primary" style="width:100%; justify-content:center;">
+              Solicitar paquete
+            </a>
+          </div>
+
+          <!-- PREMIUM -->
+          <div class="package-card reveal reveal-delay-2" id="premium">
+            <div class="package-card__badge">Premium</div>
+            <div class="package-card__name">Completo</div>
+            <div class="package-card__price">S/.1,000 <span>/ único</span></div>
+            <div class="package-card__divider"></div>
+            <ul class="package-card__features">
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Estrategia visual de marca
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Diseño completo de identidad visual
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Sistema de logos completo
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Manual de marca profesional
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Diseño para redes sociales
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Packaging o etiquetas
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Menú / fachada / papelería
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Mockups avanzados
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Asesoría visual personalizada
+              </li>
+              <li class="package-card__feature">
+                <span class="package-card__feature-icon" aria-hidden="true">✓</span>
+                Archivos editables completos
+              </li>
+            </ul>
+
+            <div style="margin-bottom: var(--sp-5);">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: var(--sp-3);">
+                <span style="font-size: var(--size-sm); color: var(--clr-text-muted);">Cantidad</span>
+                <div class="qty-control" style="display:flex; align-items:center; gap: var(--sp-4);">
+                  <button data-action="minus"
+                          style="width:28px;height:28px;border-radius:50%;border:1.5px solid var(--clr-border);
+                                 display:flex;align-items:center;justify-content:center;font-size:1.1rem;
+                                 color:var(--clr-text-muted); cursor:pointer;"
+                          aria-label="Reducir cantidad">−</button>
+                  <input class="qty-input" type="number" value="1" min="1"
+                         style="width:32px;text-align:center;font-weight:600;border:none;
+                                font-size:var(--size-base);" readonly />
+                  <button data-action="plus"
+                          style="width:28px;height:28px;border-radius:50%;border:1.5px solid var(--clr-border);
+                                 display:flex;align-items:center;justify-content:center;font-size:1.1rem;
+                                 color:var(--clr-text-muted); cursor:pointer;"
+                          aria-label="Aumentar cantidad">+</button>
+                </div>
+              </div>
+            </div>
+
+            <a href="contacto.html" class="btn btn--dark" style="width:100%; justify-content:center;">
+              Solicitar paquete
+            </a>
+            <p class="notice notice--pending" style="margin-top:var(--sp-3); width:100%; justify-content:center;">
+              ⏳ Próximamente — pago en línea
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Custom quote -->
+        <div class="text-center" style="margin-top: var(--sp-16);">
+          <span class="section-eyebrow reveal">¿Tienes necesidades específicas?</span>
+          <h3 class="reveal reveal-delay-1"
+              style="font-size: var(--size-xl); margin-bottom: var(--sp-4);">
+            Paquete personalizado
+          </h3>
+          <p class="text-muted reveal reveal-delay-2"
+             style="max-width: 460px; margin-inline: auto; margin-bottom: var(--sp-6);">
+            Si tu proyecto no encaja en ningún paquete, cuéntanos qué necesitas
+            y creamos una propuesta a medida.
+          </p>
+          <a href="contacto.html" class="btn btn--outline reveal reveal-delay-3">
+            Pedir cotización personalizada
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Kr<span>&#9679;</span>ma</div>
+          <p class="footer__tagline">De idea a identidad</p>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📍</span>Piura, Perú</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span>961 171 186</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">✉</span>Kroma062026@gmail.com</div>
+        </div>
+        <div>
+          <p class="footer__col-title">Navegación</p>
+          <a href="index.html"       class="footer__link">Inicio</a>
+          <a href="servicios.html"   class="footer__link">Servicios / Paquetes</a>
+          <a href="portafolio.html"  class="footer__link">Portafolio</a>
+          <a href="inspiracion.html" class="footer__link">Inspiración</a>
+          <a href="contacto.html"    class="footer__link">Contacto</a>
+        </div>
+        <div>
+          <p class="footer__col-title">Paquetes</p>
+          <a href="#basico"    class="footer__link">Básico</a>
+          <a href="#estandar"  class="footer__link">Estándar</a>
+          <a href="#premium"   class="footer__link">Premium</a>
+          <a href="contacto.html" class="footer__link">Cotización personalizada</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Kroma. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

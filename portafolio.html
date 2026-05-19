@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de diseño de identidad visual — Kroma, Piura." />
+  <title>Portafolio — Kroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Kroma — inicio">
+        <span class="navbar__logo-text">Kr<span>&#9679;</span>ma</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="index.html"       class="navbar__link">Inicio</a>
+        <a href="servicios.html"   class="navbar__link">Servicios</a>
+        <a href="portafolio.html"  class="navbar__link active">Portafolio</a>
+        <a href="inspiracion.html" class="navbar__link">Inspiración</a>
+        <a href="contacto.html"    class="navbar__cta">Cotizar</a>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="navbar__mobile-menu" aria-label="Menú móvil">
+    <a href="index.html"       class="navbar__mobile-link">Inicio</a>
+    <a href="servicios.html"   class="navbar__mobile-link">Servicios</a>
+    <a href="portafolio.html"  class="navbar__mobile-link active">Portafolio</a>
+    <a href="inspiracion.html" class="navbar__mobile-link">Inspiración</a>
+    <a href="contacto.html"    class="navbar__mobile-cta">Cotizar ahora</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero page-offset">
+      <div class="container">
+        <p class="page-hero__eyebrow">Nuestro trabajo</p>
+        <h1 class="page-hero__title">Portafolio</h1>
+        <p class="page-hero__subtitle">Proyectos reales, marcas con historia. Cada identidad creada con propósito.</p>
+      </div>
+    </div>
+
+
+    <!-- PORTFOLIO GRID -->
+    <section class="section" aria-label="Trabajos">
+      <div class="container">
+
+        <!-- Filter tags -->
+        <div style="display:flex; gap: var(--sp-3); flex-wrap:wrap; margin-bottom: var(--sp-10);"
+             class="reveal">
+          <button class="tag tag--green" style="cursor:pointer; border:none; padding: var(--sp-2) var(--sp-4);">
+            Todo
+          </button>
+          <button class="tag" style="cursor:pointer; border: 1px solid var(--clr-border); padding: var(--sp-2) var(--sp-4); border-radius: var(--radius-full); font-size: var(--size-xs); transition: all 150ms ease;">
+            Identidad visual
+          </button>
+          <button class="tag" style="cursor:pointer; border: 1px solid var(--clr-border); padding: var(--sp-2) var(--sp-4); border-radius: var(--radius-full); font-size: var(--size-xs); transition: all 150ms ease;">
+            Packaging
+          </button>
+          <button class="tag" style="cursor:pointer; border: 1px solid var(--clr-border); padding: var(--sp-2) var(--sp-4); border-radius: var(--radius-full); font-size: var(--size-xs); transition: all 150ms ease;">
+            Redes sociales
+          </button>
+          <button class="tag" style="cursor:pointer; border: 1px solid var(--clr-border); padding: var(--sp-2) var(--sp-4); border-radius: var(--radius-full); font-size: var(--size-xs); transition: all 150ms ease;">
+            Manual de marca
+          </button>
+        </div>
+
+        <!-- Grid -->
+        <div class="portfolio-grid reveal">
+          <!-- Add your portfolio images in img/ folder and update src attributes -->
+          <div class="portfolio-item portfolio-item--wide">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#2e5520 0%,#6b3fa0 100%);
+                        display:flex;align-items:center;justify-content:center;">
+              <span style="font-family:var(--font-display);font-size:2rem;color:rgba(255,255,255,0.2);">
+                Tu imagen aquí
+              </span>
+            </div>
+            <div class="portfolio-item__info">
+              <div class="portfolio-item__title">Proyecto 01</div>
+              <div class="portfolio-item__tag">Identidad visual</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item portfolio-item--tall">
+            <div style="width:100%;height:100%;background:linear-gradient(160deg,#1e3a14 0%,#3d6b2c 100%);
+                        display:flex;align-items:center;justify-content:center;">
+              <span style="font-family:var(--font-display);font-size:1.5rem;color:rgba(255,255,255,0.2);">
+                Tu imagen aquí
+              </span>
+            </div>
+            <div class="portfolio-item__info">
+              <div class="portfolio-item__title">Proyecto 02</div>
+              <div class="portfolio-item__tag">Packaging</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#4a2475 0%,#6b3fa0 100%);
+                        display:flex;align-items:center;justify-content:center;">
+              <span style="font-family:var(--font-display);font-size:1.2rem;color:rgba(255,255,255,0.2);">
+                Tu imagen aquí
+              </span>
+            </div>
+            <div class="portfolio-item__info">
+              <div class="portfolio-item__title">Proyecto 03</div>
+              <div class="portfolio-item__tag">Manual de marca</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#3d6b2c 0%,#6a9c52 100%);
+                        display:flex;align-items:center;justify-content:center;">
+              <span style="font-family:var(--font-display);font-size:1.2rem;color:rgba(255,255,255,0.2);">
+                Tu imagen aquí
+              </span>
+            </div>
+            <div class="portfolio-item__info">
+              <div class="portfolio-item__title">Proyecto 04</div>
+              <div class="portfolio-item__tag">Identidad visual</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#141414 0%,#2e2e2e 100%);
+                        display:flex;align-items:center;justify-content:center;">
+              <span style="font-family:var(--font-display);font-size:1.2rem;color:rgba(255,255,255,0.2);">
+                Tu imagen aquí
+              </span>
+            </div>
+            <div class="portfolio-item__info">
+              <div class="portfolio-item__title">Proyecto 05</div>
+              <div class="portfolio-item__tag">Redes sociales</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item portfolio-item--wide">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#3a5c2e 0%,#1e3a14 100%);
+                        display:flex;align-items:center;justify-content:center;">
+              <span style="font-family:var(--font-display);font-size:1.5rem;color:rgba(255,255,255,0.2);">
+                Tu imagen aquí
+              </span>
+            </div>
+            <div class="portfolio-item__info">
+              <div class="portfolio-item__title">Proyecto 06</div>
+              <div class="portfolio-item__tag">Identidad visual</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Note about images -->
+        <p class="text-muted text-small text-center reveal"
+           style="margin-top: var(--sp-8);">
+          Agrega tus imágenes en la carpeta <code>img/</code> y actualiza los
+          <code>src</code> de cada portfolio-item para ver tu trabajo real aquí.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="section section--alt" aria-label="CTA portafolio">
+      <div class="container text-center">
+        <h2 class="section-title reveal" style="margin-inline:auto; max-width:560px;">
+          ¿Te gustó lo que viste?
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-1" style="margin-inline:auto; margin-bottom: var(--sp-8);">
+          Tu marca puede ser el próximo proyecto que nos enorgullezca mostrar.
+        </p>
+        <a href="contacto.html" class="btn btn--primary btn--lg reveal reveal-delay-2">
+          Empezar mi proyecto
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Kr<span>&#9679;</span>ma</div>
+          <p class="footer__tagline">De idea a identidad</p>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📍</span>Piura, Perú</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span>961 171 186</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">✉</span>Kroma062026@gmail.com</div>
+        </div>
+        <div>
+          <p class="footer__col-title">Navegación</p>
+          <a href="index.html"       class="footer__link">Inicio</a>
+          <a href="servicios.html"   class="footer__link">Servicios / Paquetes</a>
+          <a href="portafolio.html"  class="footer__link">Portafolio</a>
+          <a href="inspiracion.html" class="footer__link">Inspiración</a>
+          <a href="contacto.html"    class="footer__link">Contacto</a>
+        </div>
+        <div>
+          <p class="footer__col-title">Paquetes</p>
+          <a href="servicios.html#basico"   class="footer__link">Básico</a>
+          <a href="servicios.html#estandar" class="footer__link">Estándar</a>
+          <a href="servicios.html#premium"  class="footer__link">Premium</a>
+          <a href="contacto.html"           class="footer__link">Cotización personalizada</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Kroma. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
