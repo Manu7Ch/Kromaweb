@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacta a Kroma para una cotización gratuita — Piura, Perú." />
+  <title>Contacto — Kroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Kroma — inicio">
+        <span class="navbar__logo-text">Kr<span>&#9679;</span>ma</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="index.html"       class="navbar__link">Inicio</a>
+        <a href="servicios.html"   class="navbar__link">Servicios</a>
+        <a href="portafolio.html"  class="navbar__link">Portafolio</a>
+        <a href="inspiracion.html" class="navbar__link">Inspiración</a>
+        <a href="contacto.html"    class="navbar__cta">Cotizar</a>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="navbar__mobile-menu" aria-label="Menú móvil">
+    <a href="index.html"       class="navbar__mobile-link">Inicio</a>
+    <a href="servicios.html"   class="navbar__mobile-link">Servicios</a>
+    <a href="portafolio.html"  class="navbar__mobile-link">Portafolio</a>
+    <a href="inspiracion.html" class="navbar__mobile-link">Inspiración</a>
+    <a href="contacto.html"    class="navbar__mobile-cta">Cotizar ahora</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero page-offset">
+      <div class="container">
+        <p class="page-hero__eyebrow">¡Comience con una cotización gratuita!</p>
+        <h1 class="page-hero__title">Contacto</h1>
+        <p class="page-hero__subtitle">¡De idea a identidad! Cuéntanos tu proyecto y te respondemos pronto.</p>
+      </div>
+    </div>
+
+
+    <!-- CONTACT -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="contact-title">Formulario de contacto</h2>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--sp-16); align-items: start;">
+
+          <!-- FORM -->
+          <div class="reveal">
+            <span class="section-eyebrow">Escríbenos</span>
+            <h3 style="font-size: var(--size-2xl); margin-bottom: var(--sp-2);">
+              Cuéntanos tu proyecto
+            </h3>
+            <p class="text-muted" style="margin-bottom: var(--sp-8); font-size: var(--size-sm);">
+              Responderemos en menos de 24 horas.
+            </p>
+
+            <form class="contact-form"
+                  style="display:flex; flex-direction:column; gap: var(--sp-5);"
+                  novalidate>
+
+              <div class="form-group">
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-input"
+                       type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Tu nombre completo"
+                       autocomplete="name"
+                       required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Correo electrónico</label>
+                <input class="form-input"
+                       type="email"
+                       id="email"
+                       name="email"
+                       placeholder="tu@correo.com"
+                       autocomplete="email"
+                       required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Teléfono (opcional)</label>
+                <input class="form-input"
+                       type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="+51 9xx xxx xxx"
+                       autocomplete="tel" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="package">Paquete de interés</label>
+                <select class="form-select" id="package" name="package">
+                  <option value="">Selecciona un paquete...</option>
+                  <option value="basico">Básico — S/.350</option>
+                  <option value="estandar">Estándar — S/.650</option>
+                  <option value="premium">Premium — S/.1,000</option>
+                  <option value="personalizado">Cotización personalizada</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Mensaje</label>
+                <textarea class="form-textarea"
+                          id="message"
+                          name="message"
+                          placeholder="Cuéntanos sobre tu negocio, qué tienes en mente y cualquier detalle relevante..."
+                          required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg"
+                      style="align-self: flex-start;">
+                Enviar mensaje
+              </button>
+
+            </form>
+          </div>
+
+          <!-- INFO -->
+          <div>
+            <div class="reveal" style="margin-bottom: var(--sp-10);">
+              <span class="section-eyebrow">Información de contacto</span>
+              <h3 style="font-size: var(--size-xl); margin-bottom: var(--sp-6);">
+                Estamos en Piura, Perú
+              </h3>
+
+              <div style="display:flex; flex-direction:column; gap: var(--sp-2);">
+                <div class="contact-info-item">
+                  <div class="contact-info-icon" aria-hidden="true">📍</div>
+                  <div class="contact-info-text">
+                    <strong>Ubicación</strong>
+                    <span>Piura, Perú</span>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="contact-info-icon" aria-hidden="true">📞</div>
+                  <div class="contact-info-text">
+                    <strong>Teléfono / WhatsApp</strong>
+                    <span>961 171 186</span>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="contact-info-icon" aria-hidden="true">✉</div>
+                  <div class="contact-info-text">
+                    <strong>Correo electrónico</strong>
+                    <span>Kroma062026@gmail.com</span>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="contact-info-icon" aria-hidden="true">🕐</div>
+                  <div class="contact-info-text">
+                    <strong>Horario de atención</strong>
+                    <span>Lun – Vie: 8:00 am – 5:00 pm</span>
+                  </div>
+                </div>
+                <div class="contact-info-item" style="padding-left: calc(44px + var(--sp-4) + var(--sp-5));">
+                  <div class="contact-info-text">
+                    <span>Sábado: 9:00 am – 12:00 pm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MAP embed -->
+            <div class="reveal reveal-delay-1"
+                 style="border-radius: var(--radius-lg); overflow:hidden; border: 1px solid var(--clr-border); box-shadow: var(--shadow-sm);">
+              <iframe
+                title="Mapa de Piura, Perú"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31856.71!2d-80.6428!3d-5.1945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1f5e3a6cb0e5%3A0x1c3c3b27b9e3e3e3!2sPiura%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1700000000000"
+                width="100%"
+                height="240"
+                style="border:none; display:block;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Mapa de Piura, Perú">
+              </iframe>
+            </div>
+
+            <!-- Quick CTA via WhatsApp -->
+            <div class="reveal reveal-delay-2"
+                 style="margin-top: var(--sp-6); padding: var(--sp-6); background: var(--clr-green-100);
+                        border-radius: var(--radius-lg); border: 1px solid var(--clr-green-300);">
+              <p style="font-size: var(--size-sm); font-weight: var(--weight-semibold); color: var(--clr-primary-dk); margin-bottom: var(--sp-3);">
+                ¿Prefieres WhatsApp?
+              </p>
+              <a href="https://wa.me/51961171186?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20mi%20marca."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn--primary btn--sm">
+                Escribir por WhatsApp
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Kr<span>&#9679;</span>ma</div>
+          <p class="footer__tagline">De idea a identidad</p>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📍</span>Piura, Perú</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span>961 171 186</div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">✉</span>Kroma062026@gmail.com</div>
+        </div>
+        <div>
+          <p class="footer__col-title">Navegación</p>
+          <a href="index.html"       class="footer__link">Inicio</a>
+          <a href="servicios.html"   class="footer__link">Servicios / Paquetes</a>
+          <a href="portafolio.html"  class="footer__link">Portafolio</a>
+          <a href="inspiracion.html" class="footer__link">Inspiración</a>
+          <a href="contacto.html"    class="footer__link">Contacto</a>
+        </div>
+        <div>
+          <p class="footer__col-title">Paquetes</p>
+          <a href="servicios.html#basico"   class="footer__link">Básico</a>
+          <a href="servicios.html#estandar" class="footer__link">Estándar</a>
+          <a href="servicios.html#premium"  class="footer__link">Premium</a>
+          <a href="contacto.html"           class="footer__link">Cotización personalizada</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Kroma. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
